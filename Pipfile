@@ -1,0 +1,26 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+flask = "*"
+flask-script = "*"
+flask-migrate = "*"
+flask-cors = "*"
+flask-bcrypt = "*"
+flask-mail = "*"
+flask-sqlalchemy = "*"
+flask-jwt-extended = "*"
+
+[scripts]
+start = "python manage.py runserver"
+init = "python manage.py db init"
+migrate = "python manage.py db migrate"
+upgrade = "python manage.py db upgrade"
+
+[requires]
+python_version = "3.8"
+
